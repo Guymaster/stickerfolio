@@ -299,20 +299,22 @@ section.home .home-content p {
     font-family: "Boldonse", sans-serif;
     height: 50px;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
     /* -webkit-text-stroke: 0.2rem var(--pink); */
 }
 
 .skills-title .active {
-    height: 50px;
+    width: 100%;
     opacity: 1;
-    transition: 0.3s;
+    transition: 0.5s ease-out;
 }
 
 .skills-title :not(.active) {
-    height: 0px;
+    width: 0;
     overflow: hidden;
     opacity: 0;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 .projetcs-box {
