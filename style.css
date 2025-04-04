@@ -268,8 +268,51 @@ section.home .home-content p {
 }
 
 .skills-box-row i {
-    font-size: 3rem;
+    font-size: 6rem;
+    color: var(--black);
+    -webkit-text-stroke: 1px var(--white);
+    transition: 0.3s;
+}
+.skills-box-row i {
+    transform: rotate(360deg);
+    transition: 0.8s;
+}
+
+.skills-box-row .skills-item:hover i {
     color: var(--white);
+    -webkit-text-stroke: 1px transparent;
+    transition: 0.3s;
+}
+.skills-box-row .skills-item:hover i {
+    transform: rotate(0deg);
+    transition: 0.5s;
+}
+
+.skills-box-row span {
+    display: none;
+}
+
+.skills-title {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    font-family: "Boldonse", sans-serif;
+    height: 50px;
+    overflow: hidden;
+    /* -webkit-text-stroke: 0.2rem var(--pink); */
+}
+
+.skills-title .active {
+    height: 50px;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.skills-title :not(.active) {
+    height: 0px;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.3s;
 }
 
 .projetcs-box {
@@ -446,6 +489,12 @@ footer a {
         aspect-ratio: unset;
         font-size: 1.5rem;
         padding: 10px;
+    }
+    .skills-box-row i {
+        font-size: 4rem;
+    }
+    .skills-title {
+        font-size: 1rem;
     }
 }
 
