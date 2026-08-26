@@ -523,3 +523,118 @@ footer a {
         width: 100%;
     }
 }
+/* LEGAL */
+
+.legal {
+    line-height: 1.7;
+}
+
+.legal h3 {
+    font-size: 1.4rem;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    color: var(--blue);
+}
+
+.legal .legal-subtitle {
+    font-size: 1.1rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: var(--yellow);
+    font-weight: normal;
+}
+
+.legal p {
+    margin-bottom: 16px;
+}
+
+.legal .legal-meta {
+    color: var(--yellow);
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.legal a {
+    color: var(--blue);
+    text-decoration: none;
+    border-bottom: solid 1px transparent;
+    transition: 0.3s;
+}
+
+.legal a:hover {
+    border-bottom-color: var(--blue);
+    transition: 0.3s;
+}
+
+.legal strong {
+    color: var(--white);
+}
+
+.legal abbr {
+    text-decoration: underline dotted;
+    cursor: help;
+}
+
+.legal-list {
+    list-style: square outside;
+    padding-left: 20px;
+    margin-bottom: 16px;
+}
+
+.legal-list li {
+    margin-bottom: 8px;
+}
+
+.legal-list li::marker {
+    color: var(--pink);
+}
+
+.legal-table-wrap {
+    overflow-x: auto;
+    margin-bottom: 16px;
+}
+
+.legal-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 500px;
+}
+
+.legal-table th, .legal-table td {
+    border: solid 1px var(--white);
+    padding: 12px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.legal-table th {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.legal .legal-back {
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    .legal h3 {
+        font-size: 1.2rem;
+    }
+    .legal .legal-back {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.legal-summary {
+    border: solid 1px var(--white);
+    border-left: solid 6px var(--yellow);
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.04);
+}
+
+.legal-summary p:last-child {
+    margin-bottom: 0;
+}
