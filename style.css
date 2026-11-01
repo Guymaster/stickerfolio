@@ -638,3 +638,21 @@ footer a {
 .legal-summary p:last-child {
     margin-bottom: 0;
 }
+
+#english {
+    scroll-margin-top: 80px;
+}
+
+.legal-steps {
+    list-style: decimal outside;
+}
+
+.test-cover {
+    display: block;
+    width: 100%;
+    max-width: 720px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
